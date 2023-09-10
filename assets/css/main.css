@@ -49,9 +49,9 @@ body::-webkit-scrollbar-track {
 }
 
 .big-btn {
-  @apply text-2xl;
+  @apply text-xl sm:text-2xl;
 }
 
 .medium-btn {
-  @apply text-xl;
+  @apply text-lg sm:text-xl;
 }

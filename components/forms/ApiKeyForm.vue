@@ -1,8 +1,8 @@
 <template>
-  <div class="w-[40rem] rounded-md bg-brown-700 p-8">
+  <div class="max-w-[35rem] grow rounded-md bg-brown-700 p-8">
     <HeadingTwo>Paste your PaLM API key</HeadingTwo>
 
-    <BaseInput class="my-5 w-full" />
+    <BaseInput class="my-4 w-full sm:my-5" />
 
     <div class="flex justify-end">
       <BaseButton> Save </BaseButton>
