@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Marie’s Proof of Love",
+    "author": "Mieko Kawakami",
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fkawakami.png?alt=media"
+  },
+  {
+    "id": 2,
+    "title": "Why aren´t you laughing",
+    "author": "David Sedaris",
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fsedaris.png?alt=media"
+  },
+  {
+    "id": 3,
+    "title": "Boxes",
+    "author": "Raymond Carver",
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fcarver.png?alt=media"
+  },
+  {
+    "id": 4,
+    "title": "A Perfect Day for Bananafish",
+    "author": "J. D. Salinger",
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fsalinger.png?alt=media"
+  }
+]

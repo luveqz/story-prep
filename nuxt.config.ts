@@ -2,6 +2,13 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  components: [
+    {
+      path: '~/components', // will get any components nested in e.g. /components/test too
+      pathPrefix: false,
+    },
+  ],
+
   css: ['@/assets/css/main.css'],
 
   postcss: {
