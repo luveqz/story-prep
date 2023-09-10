@@ -20,6 +20,7 @@ module.exports = {
       brown: {
         50: '#A59F9A',
         100: '#76706A',
+        200: '#605B56',
         600: '#292522',
         700: '#26221F',
       },
@@ -33,6 +34,7 @@ module.exports = {
       },
       white: '#FFFFFF',
       black: '#000000',
+      transparent: 'transparent',
     },
     fontFamily: {
       quicksand: ['Quicksand', 'sans-serif'],
