@@ -31,5 +31,8 @@ import stories from '@/data/stories.json'
 
       <TheFooter class="mb-5 mt-16 flex grow items-end" />
     </main>
+
+    <!-- Modals -->
+    <BaseModal name="story-textbox"> <StoryForm /> </BaseModal>
   </div>
 </template>

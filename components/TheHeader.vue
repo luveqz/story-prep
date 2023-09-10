@@ -14,10 +14,8 @@
       Generate short ad-hoc English lessons for your next read.
     </p>
 
-    <button
-      class="shadow-orange-700 rounded-md bg-orange-600 px-4 py-2 font-londrina text-2xl font-light leading-7 tracking-wide shadow-[0px_4px_1px_0px_--tw-shadow]"
-    >
+    <BaseButton size="big" @click="$modal.open('story-textbox')">
       Paste Story
-    </button>
+    </BaseButton>
   </header>
 </template>

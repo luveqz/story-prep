@@ -2,6 +2,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  modules: ['@pinia/nuxt'],
+
   components: [
     {
       path: '~/components', // will get any components nested in e.g. /components/test too

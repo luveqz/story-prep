@@ -17,3 +17,18 @@ body {
   font-family: 'Quicksand', sans-serif;
   @apply bg-brown-700 text-white;
 }
+
+/*-------------------------------------
+  Button
+-------------------------------------*/
+.primary-btn {
+  @apply bg-orange-600 shadow-orange-700;
+}
+
+.big-btn {
+  @apply text-2xl;
+}
+
+.medium-btn {
+  @apply text-xl;
+}
