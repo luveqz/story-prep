@@ -3,6 +3,7 @@ import { getKeys } from '@/lib/utils/object'
 
 export const MODALS_AND_MENUS = {
   'story-textbox': false,
+  'api-key': false,
 }
 
 export const useModalStore = defineStore({

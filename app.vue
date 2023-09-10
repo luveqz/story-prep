@@ -34,5 +34,6 @@ import stories from '@/data/stories.json'
 
     <!-- Modals -->
     <BaseModal name="story-textbox"> <StoryForm /> </BaseModal>
+    <BaseModal name="api-key"> <ApiKeyForm /> </BaseModal>
   </div>
 </template>

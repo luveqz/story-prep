@@ -1,7 +1,7 @@
 <template>
   <header class="relative mt-8 flex w-full flex-col items-center">
     <div class="mb-6 flex w-full justify-end">
-      <BaseCard class="p-2">
+      <BaseCard class="cursor-pointer p-2" @click="$modal.open('api-key')">
         <KeyIcon />
       </BaseCard>
     </div>
