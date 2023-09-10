@@ -30,7 +30,7 @@ defineProps({
     </section>
     <section>
       <h3 class="font-londrina text-xl leading-6">{{ title }}</h3>
-      <p class="mt-0.5 text-sm opacity-60">by {{ author }}</p>
+      <p class="mt-0.5 text-sm font-medium opacity-60">by {{ author }}</p>
     </section>
   </BaseCard>
 </template>
