@@ -16,7 +16,7 @@ import stories from '@/data/stories.json'
       <TheHeader />
 
       <aside class="relative mt-24">
-        <h2 class="text-center font-londrina text-3xl">Examples</h2>
+        <HeadingTwo class="text-center"> Examples </HeadingTwo>
 
         <section class="mt-9 grid grid-cols-2 gap-10">
           <StoryCard
