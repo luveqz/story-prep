@@ -10,7 +10,31 @@ module.exports = {
   ],
 
   theme: {
-    extend: {},
+    colors: {
+      orange: {
+        300: '#E1956B',
+        400: '#BD6737',
+        600: '#C64B07',
+        700: '#7E3106',
+      },
+      brown: {
+        600: '#292522',
+        700: '#26221F',
+      },
+      blue: {
+        500: '#3781BD',
+        600: '#2D88AF',
+        700: '#0C5177',
+      },
+      green: {
+        600: '#80822D',
+      },
+      white: '#FFFFFF',
+    },
+    fontFamily: {
+      quicksand: ['Quicksand', 'sans-serif'],
+      londrina: ['Londrina Solid', 'cursive'],
+    },
   },
 
   plugins: [],
