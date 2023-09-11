@@ -23,3 +23,4 @@ export const LessonSchema = z.object({
   Types
 -------------------------------------*/
 export type Lesson = z.infer<typeof LessonSchema>
+export type LessonEntry = z.infer<typeof entrySchema>
