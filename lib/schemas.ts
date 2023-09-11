@@ -3,19 +3,7 @@ import { z } from 'zod'
 /*-------------------------------------
   Partials
 -------------------------------------*/
-const nounSchema = z.object({
-  entry: z.string(),
-  definition: z.string(),
-  example: z.array(z.string()),
-})
-
-const verbSchema = z.object({
-  entry: z.string(),
-  definition: z.string(),
-  example: z.array(z.string()),
-})
-
-const idiomSchema = z.object({
+const entrySchema = z.object({
   entry: z.string(),
   definition: z.string(),
   example: z.array(z.string()),
@@ -25,9 +13,9 @@ const idiomSchema = z.object({
   Main Schemas
 -------------------------------------*/
 export const LessonSchema = z.object({
-  nouns: z.array(nounSchema).optional(),
-  verbs: z.array(verbSchema).optional(),
-  idioms: z.array(idiomSchema).optional(),
+  nouns: z.array(entrySchema).optional(),
+  verbs: z.array(entrySchema).optional(),
+  idioms: z.array(entrySchema).optional(),
   grammar: z.array(z.string()).optional(),
 })
 
