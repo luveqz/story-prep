@@ -1,7 +1,35 @@
 /*-------------------------------------
   Font
 -------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400&family=Quicksand:wght@500&display=swap');
+/* londrina-solid-300 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Londrina Solid';
+  font-style: normal;
+  font-weight: 300;
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/londrina-solid-v17-latin-300.woff2') format('woff2');
+}
+
+/* londrina-solid-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Londrina Solid';
+  font-style: normal;
+  font-weight: 400;
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/londrina-solid-v17-latin-regular.woff2') format('woff2');
+}
+
+/* quicksand-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/quicksand-v30-latin-500.woff2') format('woff2');
+}
 
 /*-------------------------------------
   Tailwind
