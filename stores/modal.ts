@@ -2,8 +2,9 @@ import { defineStore } from 'pinia'
 import { getKeys } from '@/lib/utils/object'
 
 export const MODALS_AND_MENUS = {
-  'story-textbox': false,
   'api-key': false,
+  'story-textbox': false,
+  'lesson-sheet': false,
 }
 
 export const useModalStore = defineStore({
