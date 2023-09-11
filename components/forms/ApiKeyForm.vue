@@ -2,10 +2,26 @@
   <form class="max-w-[35rem] grow rounded-md bg-brown-700 p-8" @submit.prevent>
     <HeadingTwo>Paste your PaLM API key</HeadingTwo>
 
-    <BaseInput v-model="$app.apiKey" class="my-4 w-full sm:my-5" />
+    <BaseInput v-model="$app.apiKey" class="my-4 mb-1.5 w-full sm:mt-5" />
+    <p class="font-medium text-white/40">
+      Don’t have one?
+      <a
+        class="underline"
+        href="https://developers.generativeai.google/tutorials/setup"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Get it here</a
+      >.
+    </p>
 
     <div class="flex justify-end">
-      <BaseButton @click="$modal.close('api-key')"> Save </BaseButton>
+      <BaseButton
+        class="mt-4 w-full sm:mt-0 sm:w-auto"
+        @click="$modal.close('api-key')"
+      >
+        Save
+      </BaseButton>
     </div>
   </form>
 </template>
