@@ -11,12 +11,20 @@ export const useAppStore = defineStore({
   state: () =>
     ({
       apiKey: '',
-      story: '',
+      story: {
+        title: '',
+        author: '',
+        content: '',
+      },
       lesson: undefined,
     }) as {
       apiKey: string
-      story: string
-      lesson: Lesson | undefined
+      story: {
+        title: string
+        author: string
+        content: string
+      }
+      lesson: { title: string; author: string; content: Lesson } | undefined
     },
 
   actions: {
@@ -25,7 +33,7 @@ export const useAppStore = defineStore({
         method: 'post',
         body: {
           prompt: {
-            text: PROMPT_TEMPLATE.replace('{{ STORY }}', this.story),
+            text: PROMPT_TEMPLATE.replace('{{ STORY }}', this.story.content),
           },
           safetySettings: PALM_API_SAFETY_SETTINGS,
         },

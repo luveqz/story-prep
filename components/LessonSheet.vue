@@ -39,38 +39,44 @@ const saveAsPdf = async () => {
     <div ref="lesson" class="bg-brown-700 p-8" @submit.prevent>
       <header class="mb-10 text-center">
         <p class="font-londrina text-2xl">English Lesson: </p>
-        <HeadingOne>Why aren’t you laughing</HeadingOne>
-        <p class="text-xl font-medium opacity-60">by David Sedaris</p>
+
+        <HeadingOne>
+          {{ $app.lesson?.title || 'Untitled Story' }}
+        </HeadingOne>
+
+        <p class="text-xl font-medium opacity-60">
+          by {{ $app.lesson?.author || 'Anonymous' }}
+        </p>
       </header>
 
       <div class="flex flex-col gap-y-12">
         <LessonSheetSection
-          v-if="$app.lesson?.verbs"
+          v-if="$app.lesson?.content.verbs"
           title="Verbs"
           color-class="bg-blue-500"
-          :entries="$app.lesson?.verbs"
+          :entries="$app.lesson?.content.verbs"
         />
 
         <LessonSheetSection
-          v-if="$app.lesson?.nouns"
+          v-if="$app.lesson?.content.nouns"
           title="Nouns"
           color-class="bg-green-600"
-          :entries="$app.lesson?.nouns"
+          :entries="$app.lesson?.content.nouns"
         />
 
         <LessonSheetSection
-          v-if="$app.lesson?.idioms"
+          v-if="$app.lesson?.content.idioms"
           title="Idioms"
           color-class="bg-orange-400"
-          :entries="$app.lesson?.idioms"
+          :entries="$app.lesson?.content.idioms"
         />
 
-        <section v-if="$app.lesson?.grammar">
+        <section v-if="$app.lesson?.content.grammar">
           <HeadingTwo class="mb-6 text-center">Grammar Topics</HeadingTwo>
 
           <ul class="flex flex-wrap justify-center gap-5">
             <li
-              v-for="(topic, id) in $app.lesson.grammar"
+              v-for="(topic, id) in $app.lesson.content.grammar"
               :key="id"
               class="whitespace-nowrap rounded-md border-[3px] border-dashed border-white/10 px-4 py-3 font-londrina text-xl font-light tracking-wide"
             >
