@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { getAdaptedLesson } from '@/lib/adapters'
 
-const { $app, $modal } = useNuxtApp()
+const { $app, $api, $modal } = useNuxtApp()
 
 const { data, error, execute, pending, status } = await useAsyncData(
-  $app.generateLesson,
+  $api.generateLesson,
   { immediate: false },
 )
 
