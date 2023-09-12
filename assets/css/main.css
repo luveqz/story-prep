@@ -76,6 +76,10 @@ body::-webkit-scrollbar-track {
   @apply bg-orange-600 shadow-orange-700;
 }
 
+.disabled-btn {
+  @apply shadow-brown-300 bg-brown-200;
+}
+
 .big-btn {
   @apply text-xl sm:text-2xl;
 }

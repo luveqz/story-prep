@@ -3,7 +3,7 @@ import { getAdaptedLesson } from '@/lib/adapters'
 
 const { $app, $modal } = useNuxtApp()
 
-const { data, error, execute, pending } = await useAsyncData(
+const { data, error, execute, pending, status } = await useAsyncData(
   $app.generateLesson,
   { immediate: false },
 )
@@ -62,7 +62,13 @@ const errorMessage = computed(
           {{ errorMessage }}
         </p>
       </div>
-      <BaseButton class="w-full sm:w-auto"> Generate Lesson </BaseButton>
+      <BaseButton
+        class="flex w-full items-center gap-x-2 sm:w-auto"
+        :disabled="status === 'pending'"
+      >
+        <LoadingIcon v-if="status === 'pending'" />
+        {{ status === 'pending' ? 'Generating' : 'Generate' }} Lesson
+      </BaseButton>
     </div>
   </form>
 </template>
