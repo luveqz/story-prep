@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import stories from '@/data/stories.json'
+
+useInitializations()
 </script>
 
 <template>
