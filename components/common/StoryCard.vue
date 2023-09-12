@@ -16,7 +16,7 @@ defineProps({
 </script>
 
 <template>
-  <BaseCard class="flex gap-x-4 p-4">
+  <BaseCard class="flex cursor-pointer gap-x-4 p-4">
     <section class="relative h-11 w-11 shrink-0 overflow-hidden rounded-md">
       <img
         :src="imageUrl"

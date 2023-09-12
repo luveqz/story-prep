@@ -2,6 +2,12 @@
 import stories from '@/data/stories.json'
 
 useInitializations()
+const { $modal, $app } = useNuxtApp()
+
+const openLesson = (lesson: typeof $app.lesson) => {
+  $app.lesson = lesson
+  $modal.open('lesson-sheet')
+}
 </script>
 
 <template>
@@ -31,6 +37,13 @@ useInitializations()
             :title="story.title"
             :author="story.author"
             :image-url="story.imageUrl"
+            @click="
+              openLesson({
+                title: story.title,
+                author: story.author,
+                content: story.lesson,
+              })
+            "
           />
         </section>
       </aside>

@@ -3,24 +3,468 @@
     "id": 1,
     "title": "Marie’s Proof of Love",
     "author": "Mieko Kawakami",
-    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fkawakami.png?alt=media"
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fkawakami.png?alt=media",
+    "lesson": {
+      "nouns": [
+        {
+          "entry": "cake",
+          "definition": "a sweet baked dish made from flour, sugar, eggs, and other ingredients, usually in a round or square shape",
+          "example": [
+            "I love to bake cakes.",
+            "I'll bring the cake to the party."
+          ]
+        },
+        {
+          "entry": "lake",
+          "definition": "a large body of water surrounded by land",
+          "example": [
+            "I went swimming in the lake.",
+            "The lake is frozen over this time of year."
+          ]
+        },
+        {
+          "entry": "shadow",
+          "definition": "a dark area on a surface caused by an object blocking light",
+          "example": [
+            "The shadow of the tree fell across the lawn.",
+            "The shadow of the building was cast on the ground."
+          ]
+        },
+        {
+          "entry": "forest",
+          "definition": "a large area of land covered in trees",
+          "example": [
+            "The forest is home to many different animals.",
+            "The forest was destroyed by a forest fire."
+          ]
+        }
+      ],
+      "verbs": [
+        {
+          "entry": "imagined",
+          "definition": "to form a mental picture of something that is not present",
+          "example": [
+            "I imagined what it would be like to live in a castle.",
+            "She imagined herself winning the lottery."
+          ]
+        },
+        {
+          "entry": "perused",
+          "definition": "to read something carefully and attentively",
+          "example": [
+            "I perused the book before I bought it.",
+            "She perused the internet for information about the latest news."
+          ]
+        },
+        {
+          "entry": "joked",
+          "definition": "to say something funny",
+          "example": [
+            "I joked about the situation to lighten the mood.",
+            "The comedian joked about his own weight."
+          ]
+        },
+        {
+          "entry": "exist",
+          "definition": "to be or have being",
+          "example": ["The universe exists.", "God exists, or so they say."]
+        }
+      ],
+      "idioms": [
+        {
+          "entry": "far, far away",
+          "definition": "very distant",
+          "example": [
+            "I moved far, far away from my hometown.",
+            "I want to go to a place far, far away."
+          ]
+        },
+        {
+          "entry": "take a deep breath",
+          "definition": "to breathe in deeply",
+          "example": [
+            "I took a deep breath and jumped into the water.",
+            "She took a deep breath before giving her speech."
+          ]
+        },
+        {
+          "entry": "make a mistake",
+          "definition": "to do something incorrectly",
+          "example": [
+            "I made a mistake on my math test.",
+            "She made a mistake by trusting him."
+          ]
+        }
+      ],
+      "grammar": [
+        "nouns",
+        "adjectives",
+        "past tense",
+        "conditional",
+        "past perfect",
+        "present progressive",
+        "present simple",
+        "future tense",
+        "past continuous",
+        "first person",
+        "second person"
+      ]
+    }
   },
   {
     "id": 2,
     "title": "Why aren´t you laughing",
     "author": "David Sedaris",
-    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fsedaris.png?alt=media"
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fsedaris.png?alt=media",
+    "lesson": {
+      "nouns": [
+        {
+          "entry": "house",
+          "definition": "a building for human habitation, typically with a roof and walls",
+          "example": ["The house is on fire.", "We went to the house."]
+        },
+        {
+          "entry": "family",
+          "definition": "a group of people who are related to each other by blood, marriage, or adoption",
+          "example": [
+            "My family is very large.",
+            "We had dinner with my family."
+          ]
+        },
+        {
+          "entry": "alcohol",
+          "definition": "an intoxicating drink",
+          "example": ["I like to drink alcohol.", "The alcohol made me drunk."]
+        }
+      ],
+      "verbs": [
+        {
+          "entry": "sign",
+          "definition": "make a mark on a surface to indicate approval, agreement, or ownership",
+          "example": ["I signed the contract.", "She signed her name."]
+        },
+        {
+          "entry": "remember",
+          "definition": "recall knowledge of or have in mind something previously perceived, experienced, or learned",
+          "example": [
+            "I remember what you said.",
+            "She remembered her childhood."
+          ]
+        },
+        {
+          "entry": "sober",
+          "definition": "not drunk",
+          "example": [
+            "I was sober when I drove home.",
+            "He was sober enough to drive."
+          ]
+        }
+      ],
+      "idioms": [
+        {
+          "entry": "chip in",
+          "definition": "contribute money or other resources to a common fund or cause",
+          "example": [
+            "We all chipped in to buy a new couch.",
+            "She chipped in some money for the pizza."
+          ]
+        },
+        {
+          "entry": "a dead tooth",
+          "definition": "something that is useless or no longer effective",
+          "example": [
+            "The old car is a dead tooth.",
+            "The old computer is a dead tooth."
+          ]
+        },
+        {
+          "entry": "a living ghost",
+          "definition": "a person who no longer feels alive or who has lost all joy in life",
+          "example": [
+            "He's like a living ghost since his wife died.",
+            "She's a living ghost since she lost her job."
+          ]
+        }
+      ],
+      "grammar": ["nouns", "adjectives", "verbs", "phrasal verbs", "idioms"]
+    }
   },
   {
     "id": 3,
     "title": "Boxes",
     "author": "Raymond Carver",
-    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fcarver.png?alt=media"
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fcarver.png?alt=media",
+    "lesson": {
+      "nouns": [
+        {
+          "entry": "mother",
+          "definition": "a female parent",
+          "example": [
+            "I love my mother very much",
+            "My mother is a good person."
+          ]
+        },
+        {
+          "entry": "icebox",
+          "definition": "a refrigerator",
+          "example": [
+            "My mother put the chicken in the icebox.",
+            "The icebox was empty."
+          ]
+        },
+        {
+          "entry": "chicken",
+          "definition": "a domesticated fowl, Gallus gallus domesticus, that is raised for its meat and eggs.",
+          "example": [
+            "We ate fried chicken for dinner.",
+            "The chicken laid an egg."
+          ]
+        },
+        {
+          "entry": "plate",
+          "definition": "a flat, usually round, dish used for serving or eating food",
+          "example": [
+            "We used plates for dinner.",
+            "The plate was made of glass."
+          ]
+        },
+        {
+          "entry": "knife",
+          "definition": "a bladed implement used for cutting",
+          "example": ["I cut the chicken with a knife.", "The knife was sharp."]
+        },
+        {
+          "entry": "fork",
+          "definition": "a handheld implement with two or more prongs, used for eating",
+          "example": [
+            "We used forks to eat the chicken.",
+            "The fork was metal."
+          ]
+        },
+        {
+          "entry": "last minute",
+          "definition": "at the end of the available time",
+          "example": [
+            "We decided to go to the movies at the last minute.",
+            "The plane left at the last minute."
+          ]
+        },
+        {
+          "entry": "meal",
+          "definition": "the food eaten at one time",
+          "example": [
+            "We had a delicious meal at the restaurant.",
+            "The meal was healthy."
+          ]
+        },
+        {
+          "entry": "figure something out",
+          "definition": "to understand something or find a solution to a problem",
+          "example": [
+            "I can't figure out how to fix this computer.",
+            "I finally figured out how to solve the puzzle."
+          ]
+        },
+        {
+          "entry": "go to eat",
+          "definition": "to visit a restaurant or other place to eat",
+          "example": [
+            "We went to eat at the new Italian restaurant.",
+            "The restaurant was crowded."
+          ]
+        },
+        {
+          "entry": "curtains",
+          "definition": "a piece of cloth hung over a window to keep out the light or provide privacy",
+          "example": [
+            "We bought some new curtains for the living room.",
+            "The curtains were blue."
+          ]
+        }
+      ],
+      "verbs": [
+        {
+          "entry": "pack",
+          "definition": "to put things together in a container",
+          "example": [
+            "I packed my suitcase for the trip.",
+            "The movers packed up all the furniture."
+          ]
+        },
+        {
+          "entry": "call",
+          "definition": "to make a phone call to someone",
+          "example": [
+            "I called my mother to wish her a happy birthday.",
+            "The phone rang and I answered it."
+          ]
+        },
+        {
+          "entry": "hang up",
+          "definition": "to stop talking on the phone",
+          "example": [
+            "I hung up the phone and went to bed.",
+            "The phone rang and I hung up."
+          ]
+        },
+        {
+          "entry": "wish",
+          "definition": "to hope for something",
+          "example": [
+            "I wish I had more money.",
+            "I wish I could go on vacation."
+          ]
+        },
+        {
+          "entry": "say",
+          "definition": "to express something in words",
+          "example": [
+            "I said hello to my mother.",
+            "The teacher said the answer was 42."
+          ]
+        },
+        {
+          "entry": "bend",
+          "definition": "to make something or oneself curve",
+          "example": [
+            "I bent the paper into a square.",
+            "The tree bent in the wind."
+          ]
+        },
+        {
+          "entry": "listen",
+          "definition": "to pay attention to sounds",
+          "example": [
+            "I listened to the birds singing.",
+            "The teacher listened to the students answer."
+          ]
+        },
+        {
+          "entry": "close",
+          "definition": "to make something unable to be opened",
+          "example": [
+            "I closed the door behind me.",
+            "The door closed automatically."
+          ]
+        },
+        {
+          "entry": "borrow",
+          "definition": "to take something from someone with the intention of returning it",
+          "example": [
+            "I borrowed my friend's car.",
+            "The library borrows books from other libraries."
+          ]
+        },
+        {
+          "entry": "run",
+          "definition": "to move quickly by taking steps",
+          "example": [
+            "I ran to the store to buy some milk.",
+            "The dog ran after the ball."
+          ]
+        },
+        {
+          "entry": "sit",
+          "definition": "to rest with one's weight on one's buttocks",
+          "example": [
+            "I sat down on the couch.",
+            "The cat sat on the windowsill."
+          ]
+        },
+        {
+          "entry": "drive",
+          "definition": "to operate a vehicle",
+          "example": ["I drove my car to work.", "The bus driver drove"]
+        }
+      ]
+    }
   },
   {
     "id": 4,
     "title": "A Perfect Day for Bananafish",
     "author": "J. D. Salinger",
-    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fsalinger.png?alt=media"
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fsalinger.png?alt=media",
+    "lesson": {
+      "nouns": [
+        {
+          "entry": "New York",
+          "definition": "a city in the northeastern United States.",
+          "example": [
+            "I'm going to New York for vacation.",
+            "She's from New York."
+          ]
+        },
+        {
+          "entry": "hotel",
+          "definition": "a building that provides lodging and meals for travelers.",
+          "example": [
+            "I stayed at a hotel when I was in Miami.",
+            "The hotel had a pool and a restaurant."
+          ]
+        },
+        {
+          "entry": "magazine",
+          "definition": "a publication containing articles, stories, pictures, etc., usually issued regularly.",
+          "example": [
+            "I read an article in a magazine about the history of the city.",
+            "I bought a magazine to read on the plane."
+          ]
+        },
+        {
+          "entry": "nail",
+          "definition": "the hard part at the end of a finger or toe.",
+          "example": [
+            "I broke my nail when I hit it with a hammer.",
+            "She painted her nails red."
+          ]
+        },
+        {
+          "entry": "moon",
+          "definition": "the natural satellite of the Earth.",
+          "example": [
+            "The moon is the only natural satellite of the Earth.",
+            "I saw the moon last night."
+          ]
+        }
+      ],
+      "verbs": [
+        {
+          "entry": "ring",
+          "definition": "to make a bell-like sound.",
+          "example": ["The phone rang.", "The doorbell rang."]
+        },
+        {
+          "entry": "dry",
+          "definition": "to remove all moisture from something.",
+          "example": ["I dried the dishes.", "I dried my hair."]
+        },
+        {
+          "entry": "wait",
+          "definition": "to remain in a place in order to receive something or for something to happen.",
+          "example": [
+            "I waited for the bus.",
+            "I waited for the movie to start."
+          ]
+        }
+      ],
+      "idioms": [
+        {
+          "entry": "hottest day in history",
+          "definition": "the day with the highest temperature on record.",
+          "example": [
+            "It was the hottest day in history.",
+            "The hottest day of the year."
+          ]
+        }
+      ],
+      "grammar": [
+        "nouns",
+        "countable nouns",
+        "proper nouns",
+        "present continuous",
+        "past simple",
+        "first person"
+      ]
+    }
   }
 ]
