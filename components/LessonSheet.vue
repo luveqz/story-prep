@@ -38,13 +38,13 @@ const saveAsPdf = async () => {
   >
     <div ref="lesson" class="bg-brown-700 p-8" @submit.prevent>
       <header class="mb-10 text-center">
-        <p class="font-londrina text-2xl">English Lesson: </p>
+        <p class="font-londrina text-xl sm:text-2xl">English Lesson: </p>
 
         <HeadingOne>
           {{ $app.lesson?.title || 'Untitled Story' }}
         </HeadingOne>
 
-        <p class="text-xl font-medium opacity-60">
+        <p class="text-lg font-medium opacity-60 sm:text-xl">
           by {{ $app.lesson?.author || 'Anonymous' }}
         </p>
       </header>
@@ -78,7 +78,7 @@ const saveAsPdf = async () => {
             <li
               v-for="(topic, id) in $app.lesson.content.grammar"
               :key="id"
-              class="whitespace-nowrap rounded-md border-[3px] border-dashed border-white/10 px-4 py-3 font-londrina text-xl font-light tracking-wide"
+              class="whitespace-nowrap rounded-md border-[3px] border-dashed border-white/10 px-2 py-1 font-londrina text-xl font-light tracking-wide"
             >
               {{ topic }}
             </li>
