@@ -32,6 +32,7 @@ const openLesson = (lesson: typeof $app.lesson) => {
 
         <section class="mt-6 grid gap-4 sm:mt-9 sm:grid-cols-2 sm:gap-10">
           <StoryCard
+            data-testid="story-card"
             v-for="story in stories"
             :key="story.id"
             :title="story.title"
@@ -41,6 +42,7 @@ const openLesson = (lesson: typeof $app.lesson) => {
               openLesson({
                 title: story.title,
                 author: story.author,
+                slug: story.slug,
                 content: story.lesson,
               })
             "

@@ -15,6 +15,7 @@ watch(pending, () => {
     if (lesson) {
       $app.lesson = {
         title: $app.story.title,
+        slug: slugify($app.story.title),
         author: $app.story.author,
         content: lesson,
       }

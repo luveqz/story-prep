@@ -27,6 +27,8 @@ const onCallToAction = () => {
       Generate short ad-hoc English lessons for your next read.
     </p>
 
-    <BaseButton size="big" @click="onCallToAction"> Paste Story </BaseButton>
+    <BaseButton data-testid="call-to-action" size="big" @click="onCallToAction">
+      Paste Story
+    </BaseButton>
   </header>
 </template>

@@ -1,7 +1,97 @@
 [
   {
     "id": 1,
+    "title": "A Perfect Day for Bananafish",
+    "slug": "a-perfect-day-for-bananafish",
+    "author": "J. D. Salinger",
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fsalinger.png?alt=media",
+    "lesson": {
+      "nouns": [
+        {
+          "entry": "New York",
+          "definition": "a city in the northeastern United States.",
+          "example": [
+            "I'm going to New York for vacation.",
+            "She's from New York."
+          ]
+        },
+        {
+          "entry": "hotel",
+          "definition": "a building that provides lodging and meals for travelers.",
+          "example": [
+            "I stayed at a hotel when I was in Miami.",
+            "The hotel had a pool and a restaurant."
+          ]
+        },
+        {
+          "entry": "magazine",
+          "definition": "a publication containing articles, stories, pictures, etc., usually issued regularly.",
+          "example": [
+            "I read an article in a magazine about the history of the city.",
+            "I bought a magazine to read on the plane."
+          ]
+        },
+        {
+          "entry": "nail",
+          "definition": "the hard part at the end of a finger or toe.",
+          "example": [
+            "I broke my nail when I hit it with a hammer.",
+            "She painted her nails red."
+          ]
+        },
+        {
+          "entry": "moon",
+          "definition": "the natural satellite of the Earth.",
+          "example": [
+            "The moon is the only natural satellite of the Earth.",
+            "I saw the moon last night."
+          ]
+        }
+      ],
+      "verbs": [
+        {
+          "entry": "ring",
+          "definition": "to make a bell-like sound.",
+          "example": ["The phone rang.", "The doorbell rang."]
+        },
+        {
+          "entry": "dry",
+          "definition": "to remove all moisture from something.",
+          "example": ["I dried the dishes.", "I dried my hair."]
+        },
+        {
+          "entry": "wait",
+          "definition": "to remain in a place in order to receive something or for something to happen.",
+          "example": [
+            "I waited for the bus.",
+            "I waited for the movie to start."
+          ]
+        }
+      ],
+      "idioms": [
+        {
+          "entry": "hottest day in history",
+          "definition": "the day with the highest temperature on record.",
+          "example": [
+            "It was the hottest day in history.",
+            "The hottest day of the year."
+          ]
+        }
+      ],
+      "grammar": [
+        "nouns",
+        "countable nouns",
+        "proper nouns",
+        "present continuous",
+        "past simple",
+        "first person"
+      ]
+    }
+  },
+  {
+    "id": 2,
     "title": "Marie’s Proof of Love",
+    "slug": "marie-s-proof-of-love",
     "author": "Mieko Kawakami",
     "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fkawakami.png?alt=media",
     "lesson": {
@@ -112,8 +202,9 @@
     }
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Why aren´t you laughing",
+    "slug": "why-aren-t-you-laughing",
     "author": "David Sedaris",
     "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fsedaris.png?alt=media",
     "lesson": {
@@ -190,8 +281,9 @@
     }
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Boxes",
+    "slug": "boxes",
     "author": "Raymond Carver",
     "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fcarver.png?alt=media",
     "lesson": {
@@ -376,94 +468,6 @@
           "definition": "to operate a vehicle",
           "example": ["I drove my car to work.", "The bus driver drove"]
         }
-      ]
-    }
-  },
-  {
-    "id": 4,
-    "title": "A Perfect Day for Bananafish",
-    "author": "J. D. Salinger",
-    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fsalinger.png?alt=media",
-    "lesson": {
-      "nouns": [
-        {
-          "entry": "New York",
-          "definition": "a city in the northeastern United States.",
-          "example": [
-            "I'm going to New York for vacation.",
-            "She's from New York."
-          ]
-        },
-        {
-          "entry": "hotel",
-          "definition": "a building that provides lodging and meals for travelers.",
-          "example": [
-            "I stayed at a hotel when I was in Miami.",
-            "The hotel had a pool and a restaurant."
-          ]
-        },
-        {
-          "entry": "magazine",
-          "definition": "a publication containing articles, stories, pictures, etc., usually issued regularly.",
-          "example": [
-            "I read an article in a magazine about the history of the city.",
-            "I bought a magazine to read on the plane."
-          ]
-        },
-        {
-          "entry": "nail",
-          "definition": "the hard part at the end of a finger or toe.",
-          "example": [
-            "I broke my nail when I hit it with a hammer.",
-            "She painted her nails red."
-          ]
-        },
-        {
-          "entry": "moon",
-          "definition": "the natural satellite of the Earth.",
-          "example": [
-            "The moon is the only natural satellite of the Earth.",
-            "I saw the moon last night."
-          ]
-        }
-      ],
-      "verbs": [
-        {
-          "entry": "ring",
-          "definition": "to make a bell-like sound.",
-          "example": ["The phone rang.", "The doorbell rang."]
-        },
-        {
-          "entry": "dry",
-          "definition": "to remove all moisture from something.",
-          "example": ["I dried the dishes.", "I dried my hair."]
-        },
-        {
-          "entry": "wait",
-          "definition": "to remain in a place in order to receive something or for something to happen.",
-          "example": [
-            "I waited for the bus.",
-            "I waited for the movie to start."
-          ]
-        }
-      ],
-      "idioms": [
-        {
-          "entry": "hottest day in history",
-          "definition": "the day with the highest temperature on record.",
-          "example": [
-            "It was the hottest day in history.",
-            "The hottest day of the year."
-          ]
-        }
-      ],
-      "grammar": [
-        "nouns",
-        "countable nouns",
-        "proper nouns",
-        "present continuous",
-        "past simple",
-        "first person"
       ]
     }
   }

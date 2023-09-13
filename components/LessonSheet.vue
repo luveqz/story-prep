@@ -5,7 +5,7 @@ import { jsPDF } from 'jspdf'
 const lesson = ref<HTMLElement | undefined>()
 const capturing = ref(false)
 
-const saveAsPdf = async () => {
+const saveAsPdf = async (filename: string) => {
   if (lesson.value) {
     const scale = 2
     const { width, height } = lesson.value.getBoundingClientRect()
@@ -28,12 +28,14 @@ const saveAsPdf = async () => {
     ])
     pdf.addImage(blob, 'PNG', 0, 0, width * outputScale, height * outputScale)
 
-    pdf.save('test.pdf')
+    pdf.save(filename)
   }
 }
 </script>
+
 <template>
   <div
+    data-testid="lesson-sheet"
     class="max-h-[calc(100vh_-_2rem)] max-w-[40rem] grow overflow-auto rounded-md border-r-8 border-brown-700 bg-brown-700"
   >
     <div ref="lesson" class="bg-brown-700 p-8" @submit.prevent>
@@ -85,7 +87,11 @@ const saveAsPdf = async () => {
           </ul>
         </section>
 
-        <BaseButton v-if="!capturing" @click="saveAsPdf">
+        <BaseButton
+          data-testid="save-btn"
+          v-if="!capturing"
+          @click="saveAsPdf(`${$app.lesson.slug}.pdf`)"
+        >
           Save as PDF
         </BaseButton>
       </div>

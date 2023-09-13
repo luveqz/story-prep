@@ -20,6 +20,13 @@ export const useAppStore = defineStore({
         author: string
         content: string
       }
-      lesson: { title: string; author: string; content: Lesson } | undefined
+      lesson:
+        | {
+            title: string
+            author: string
+            slug: string
+            content: Lesson
+          }
+        | undefined
     },
 })

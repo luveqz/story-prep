@@ -23,6 +23,7 @@ const { error } = useErrorTooltip()
     >
       <section
         v-if="error"
+        data-testid="error-tooltip"
         class="text-brown-500 absolute right-full top-0 z-10 mr-1.5 flex max-w-xs transform flex-col gap-3 rounded bg-brown-50 px-4 py-2 text-center"
       >
         <div class="relative text-brown-700">
