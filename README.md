@@ -1,20 +1,19 @@
-# Nuxt 3 Minimal Starter
+[![License: MIT](docs/img/license-badge.svg)](LICENSE)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+<p align="center">
+  <img alt="Story Prep Logo" src="https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Flogo.webp?alt=media">
+</p>
+
+<p align="center" style="max-width: 380px; margin: auto">
+    Generate short ad-hoc English lessons for your next read.
+</p>
 
 ## Setup
 
 Make sure to install the dependencies:
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
+npm install # or  yarn install
 ```
 
 ## Development Server
@@ -22,14 +21,7 @@ yarn install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
+npm run dev # or yarn dev
 ```
 
 ## Production
@@ -37,27 +29,11 @@ yarn dev
 Build the application for production:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
+npm run build # or yarn build
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
+npm run preview #or yarn preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
