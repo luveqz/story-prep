@@ -8,10 +8,18 @@ const { data, error, execute, pending, status } = await useAsyncData(
   $api.generateLesson,
   { immediate: false },
 )
+const adapterError = ref('')
 
 watch(pending, () => {
   if (!pending.value) {
+    adapterError.value = ''
+
     const lesson = getAdaptedLesson(data.value)
+
+    if ('error' in lesson) {
+      adapterError.value = lesson.error
+      return
+    }
 
     if (lesson) {
       $app.lesson = {
@@ -25,7 +33,7 @@ watch(pending, () => {
   }
 })
 
-const errorMessage = computed(
+const apiError = computed(
   () => error.value && (error.value as any)?.data?.error.message,
 )
 </script>
@@ -60,8 +68,8 @@ const errorMessage = computed(
 
     <div class="flex flex-col justify-between gap-4 sm:flex-row sm:gap-8">
       <div>
-        <p v-if="error" class="text-pink-400">
-          {{ errorMessage }}
+        <p v-if="error || adapterError" class="text-pink-400">
+          {{ adapterError || apiError }}
         </p>
       </div>
       <BaseButton

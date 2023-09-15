@@ -24,4 +24,6 @@ export function getAdaptedLesson(data: any) {
   if (result.success) {
     return result.data
   }
+
+  return { error: 'We got an unexpected response from the LLM, please retry.' }
 }
