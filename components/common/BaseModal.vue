@@ -24,7 +24,7 @@ onKeyStroke('Escape', close)
   <transition
     enter-from-class="opacity-0"
     enter-active-class="transition-opacity duration-200"
-    leave-active-class="transition-opacity duration-500"
+    leave-active-class="transition-opacity duration-300"
     leave-to-class="opacity-0"
   >
     <div

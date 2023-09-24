@@ -18,7 +18,7 @@ defineProps({
 <template>
   <button
     :class="`${disabled ? 'disabled' : variant}-btn ${size}-btn`"
-    class="whitespace-nowrap rounded-md px-4 py-2 font-londrina font-light leading-7 tracking-wide shadow-[0px_4px_0px_0px_--tw-shadow]"
+    class="whitespace-nowrap rounded-md px-4 py-2 font-londrina font-light leading-7 tracking-wide shadow-[0px_4px_0px_0px_--tw-shadow] hover:brightness-110 active:translate-y-1 active:shadow-[0px_4px_0px_0px_--tw-shadow]"
     :disabled="disabled"
   >
     <slot />
