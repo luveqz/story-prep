@@ -1,10 +1,14 @@
 <script setup lang="ts">
 import domtoimage from 'dom-to-image'
 import { jsPDF } from 'jspdf'
+import WaveSurfer from 'wavesurfer.js'
 
 const lesson = ref<HTMLElement | undefined>()
 const capturing = ref(false)
-const { $api } = useNuxtApp()
+const player = ref<HTMLElement>()
+const wavesurfer = ref()
+const isPlaying = ref(false)
+const { $api, $app } = useNuxtApp()
 
 const {
   data,
@@ -12,21 +16,27 @@ const {
   pending: generatingAudio,
 } = await useAsyncData($api.generateAudioLesson, { immediate: false })
 
-const generateAudioLesson = async (slug: string) => {
+const generateAudioLesson = async () => {
   await generateAudio()
   const audio = data.value
 
-  if (audio) {
-    const link = document.createElement('a')
-
-    const format = audio.audio_info.audio_format.toLowerCase()
-    link.href = `data:audio/${format};base64,${audio.base64}`
-    link.download = `${slug}.${format}`
-
-    document.body.appendChild(link)
-    link.click()
-    console.log(link)
+  if (audio && $app.lesson) {
+    $app.lesson.audioUrl = `data:audio/wav;base64,${audio.base64}`
   }
+}
+
+const saveAudio = (slug: string) => {
+  if (!$app.lesson?.audioUrl) {
+    return
+  }
+  const link = document.createElement('a')
+
+  link.href = $app.lesson.audioUrl
+  link.download = `${slug}.wav`
+
+  document.body.appendChild(link)
+  link.click()
+  console.log(link)
 }
 
 const saveAsPdf = async (filename: string) => {
@@ -55,6 +65,26 @@ const saveAsPdf = async (filename: string) => {
     pdf.save(filename)
   }
 }
+
+const togglePlayer = () => {
+  isPlaying.value = !isPlaying.value
+  wavesurfer.value?.playPause()
+}
+
+onMounted(() => {
+  wavesurfer.value = WaveSurfer.create({
+    container: player.value!,
+    waveColor: '#333333',
+    progressColor: '#FFFFFF',
+    url: $app.lesson?.audioUrl,
+    cursorWidth: 0,
+    barHeight: 0.8,
+    dragToSeek: true,
+    barWidth: 4,
+    barGap: 6,
+    barRadius: 2,
+  })
+})
 </script>
 
 <template>
@@ -63,7 +93,7 @@ const saveAsPdf = async (filename: string) => {
     class="max-h-[calc(100vh_-_2rem)] max-w-[40rem] grow overflow-auto rounded-md border-r-8 border-gray bg-gray"
   >
     <div v-if="$app.lesson" ref="lesson" class="bg-gray p-8" @submit.prevent>
-      <header class="mb-10 text-center">
+      <header class="mb-2 text-center">
         <p class="font-londrina text-xl sm:text-2xl">English Lesson: </p>
 
         <HeadingOne>
@@ -74,6 +104,18 @@ const saveAsPdf = async (filename: string) => {
           by {{ $app.lesson.author || 'Anonymous' }}
         </p>
       </header>
+
+      <div v-show="wavesurfer" class="mx-auto flex max-w-96 items-center gap-4">
+        <button
+          v-if="wavesurfer"
+          @click="togglePlayer"
+          class="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray"
+        >
+          <PlayIcon class="w-5" v-show="!isPlaying" />
+          <PauseIcon class="w-5" v-show="isPlaying" />
+        </button>
+        <div ref="player" class="grow" />
+      </div>
 
       <div class="flex flex-col gap-y-12">
         <LessonSheetSection
@@ -116,9 +158,15 @@ const saveAsPdf = async (filename: string) => {
             class="grow md:grow-0"
             data-testid="generate-audio-btn"
             variant="secondary"
-            @click="generateAudioLesson(`${$app.lesson.slug}`)"
+            @click="
+              $app.lesson.audioUrl
+                ? saveAudio(`${$app.lesson.slug}`)
+                : generateAudioLesson()
+            "
           >
-            Generate audio exercise
+            {{
+              $app.lesson.audioUrl ? 'Save audio' : 'Generate audio exercise'
+            }}
           </BaseButton>
 
           <BaseButton

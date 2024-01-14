@@ -26,6 +26,7 @@
     "dom-to-image": "^2.6.0",
     "jspdf": "^2.5.1",
     "pinia": "^2.1.6",
+    "wavesurfer.js": "^7.6.4",
     "zod": "^3.22.2"
   }
 }

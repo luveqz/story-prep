@@ -36,6 +36,7 @@ const openLesson = (lesson: typeof $app.lesson) => {
                 title: story.title,
                 author: story.author,
                 slug: story.slug,
+                audioUrl: story.audioUrl,
                 content: story.lesson,
               })
             "
