@@ -1,4 +1,4 @@
-import { LessonSchema } from './schemas'
+import { LessonSchema } from '@/lib/schemas'
 
 export function getAdaptedLesson(data: any) {
   let lesson

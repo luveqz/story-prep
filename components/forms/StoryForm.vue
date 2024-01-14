@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getAdaptedLesson } from '@/lib/adapters'
+import { getAdaptedLesson } from '@/lib/adapters/lesson'
 import { slugify } from '@/lib/utils/string'
 
 const { $app, $api, $modal } = useNuxtApp()
