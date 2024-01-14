@@ -31,4 +31,4 @@ cypress/downloads
 cypress/videos
 
 # Lock files
-package-lock.json
+yarn.lock
