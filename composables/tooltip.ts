@@ -16,7 +16,7 @@ export function useErrorTooltip() {
         error.value = false
         timeoutID.value = undefined
       },
-      (args?.duration || 3) * 1000,
+      (args?.duration || 4) * 1000,
     )
   }
 
