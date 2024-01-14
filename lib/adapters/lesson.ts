@@ -40,14 +40,14 @@ Usage examples of "${entry.entry}":
 export function getAdaptedLessonScript(content: Lesson) {
   let script = ''
 
-  if (content.nouns) {
-    script += 'Part One: Nouns...\n'
-    script += content.nouns.map((noun) => getAdaptedScriptEntry(noun))
+  if (content.verbs) {
+    script += 'Part One: Verbs...\n'
+    script += content.verbs.map((noun) => getAdaptedScriptEntry(noun))
   }
 
-  if (content.verbs) {
-    script += 'Part Two: Verbs...\n'
-    script += content.verbs.map((noun) => getAdaptedScriptEntry(noun))
+  if (content.nouns) {
+    script += 'Part Two: Nouns...\n'
+    script += content.nouns.map((noun) => getAdaptedScriptEntry(noun))
   }
 
   if (content.idioms) {
