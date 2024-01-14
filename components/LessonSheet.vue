@@ -36,7 +36,7 @@ const saveAsPdf = async (filename: string) => {
 <template>
   <div
     data-testid="lesson-sheet"
-    class="max-h-[calc(100vh_-_2rem)] max-w-[40rem] grow overflow-auto rounded-md border-r-8 border-brown-700 bg-brown-700"
+    class="max-h-[calc(100vh_-_2rem)] max-w-[40rem] grow overflow-auto rounded-md border-r-8 border-gray bg-gray"
   >
     <div
       v-if="$app.lesson"

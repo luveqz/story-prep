@@ -26,7 +26,7 @@ const { error } = useErrorTooltip()
         data-testid="error-tooltip"
         class="text-brown-500 absolute right-full top-0 z-10 mr-1.5 flex max-w-xs transform flex-col gap-3 rounded bg-brown-50 px-4 py-2 text-center"
       >
-        <div class="relative text-brown-700">
+        <div class="relative text-gray">
           <span
             class="triangle-up absolute left-full ml-1 translate-x-full transform -scroll-mt-0.5"
           />

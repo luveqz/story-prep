@@ -1,5 +1,5 @@
 <template>
-  <form class="max-w-[35rem] grow rounded-md bg-brown-700 p-8" @submit.prevent>
+  <form class="max-w-[35rem] grow rounded-md bg-gray p-8" @submit.prevent>
     <HeadingTwo>Paste your Clarifai PAT</HeadingTwo>
 
     <BaseInput v-model="$app.apiKey" class="my-4 mb-1.5 w-full sm:mt-5" />

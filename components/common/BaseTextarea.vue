@@ -11,7 +11,7 @@ defineProps({
 
 <template>
   <textarea
-    class="resize-none rounded-md border-r-[6px] border-brown-50 bg-brown-50 p-4 text-brown-700 shadow-[0px_2px_0px_0px_--tw-shadow] shadow-brown-100"
+    class="resize-none rounded-md border-r-[6px] border-brown-50 bg-brown-50 p-4 text-gray shadow-[0px_2px_0px_0px_--tw-shadow] shadow-brown-100"
     :value="modelValue"
     @input="
       $emit('update:modelValue', ($event.target as HTMLInputElement).value)

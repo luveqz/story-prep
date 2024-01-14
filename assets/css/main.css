@@ -43,7 +43,7 @@
 -------------------------------------*/
 body {
   font-family: 'Quicksand', sans-serif;
-  @apply bg-brown-600 text-white;
+  @apply bg-gray text-white;
 }
 
 /*-------------------------------------
