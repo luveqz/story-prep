@@ -1,13 +1,13 @@
 <template>
   <form class="max-w-[35rem] grow rounded-md bg-brown-700 p-8" @submit.prevent>
-    <HeadingTwo>Paste your PaLM API key</HeadingTwo>
+    <HeadingTwo>Paste your Clarifai PAT</HeadingTwo>
 
     <BaseInput v-model="$app.apiKey" class="my-4 mb-1.5 w-full sm:mt-5" />
     <p class="font-medium text-white/40">
       Don’t have one?
       <a
         class="underline"
-        href="https://developers.generativeai.google/tutorials/setup"
+        href="https://docs.clarifai.com/clarifai-basics/authentication/personal-access-tokens/"
         target="_blank"
         rel="noreferrer"
       >
