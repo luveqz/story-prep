@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { LessonEntry } from '@/lib/schemas'
+import { type LessonEntry } from '@/lib/schemas'
 
 defineProps({
   title: {
@@ -44,7 +44,7 @@ defineProps({
         <!-- Examples -->
         <ul class="flex grow flex-col gap-y-3">
           <li
-            v-for="(example, id) in entry.example"
+            v-for="(example, id) in entry.examples"
             :key="id"
             class="ml-5 flex gap-x-3 sm:ml-0"
           >

@@ -6,7 +6,7 @@ import { z } from 'zod'
 const entrySchema = z.object({
   entry: z.string(),
   definition: z.string(),
-  example: z.array(z.string()),
+  examples: z.array(z.string()),
 })
 
 /*-------------------------------------
