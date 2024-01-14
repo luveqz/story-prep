@@ -8,21 +8,24 @@ const capturing = ref(false)
 const player = ref<HTMLElement>()
 const wavesurfer = ref()
 const isPlaying = ref(false)
+const isGeneratingAudio = ref(false)
 const { $api, $app } = useNuxtApp()
 
-const {
-  data,
-  execute: generateAudio,
-  pending: generatingAudio,
-} = await useAsyncData($api.generateAudioLesson, { immediate: false })
+const { data, execute: generateAudio } = await useAsyncData(
+  $api.generateAudioLesson,
+  { immediate: false },
+)
 
 const generateAudioLesson = async () => {
+  isGeneratingAudio.value = true
   await generateAudio()
   const audio = data.value
 
   if (audio && $app.lesson) {
     $app.lesson.audioUrl = `data:audio/wav;base64,${audio.base64}`
   }
+  isGeneratingAudio.value = false
+  initPlayer()
 }
 
 const saveAudio = (slug: string) => {
@@ -71,19 +74,25 @@ const togglePlayer = () => {
   wavesurfer.value?.playPause()
 }
 
+const initPlayer = () => {
+  if ($app.lesson?.audioUrl && !wavesurfer.value) {
+    wavesurfer.value = WaveSurfer.create({
+      container: player.value!,
+      waveColor: '#333333',
+      progressColor: '#FFFFFF',
+      url: $app.lesson?.audioUrl,
+      cursorWidth: 0,
+      barHeight: 0.8,
+      dragToSeek: true,
+      barWidth: 4,
+      barGap: 6,
+      barRadius: 2,
+    })
+  }
+}
+
 onMounted(() => {
-  wavesurfer.value = WaveSurfer.create({
-    container: player.value!,
-    waveColor: '#333333',
-    progressColor: '#FFFFFF',
-    url: $app.lesson?.audioUrl,
-    cursorWidth: 0,
-    barHeight: 0.8,
-    dragToSeek: true,
-    barWidth: 4,
-    barGap: 6,
-    barRadius: 2,
-  })
+  initPlayer()
 })
 </script>
 
@@ -93,7 +102,10 @@ onMounted(() => {
     class="max-h-[calc(100vh_-_2rem)] max-w-[40rem] grow overflow-auto rounded-md border-r-8 border-gray bg-gray"
   >
     <div v-if="$app.lesson" ref="lesson" class="bg-gray p-8" @submit.prevent>
-      <header class="mb-2 text-center">
+      <header
+        class="text-center"
+        :class="$app.lesson.audioUrl ? 'mb-2' : 'mb-16'"
+      >
         <p class="font-londrina text-xl sm:text-2xl">English Lesson: </p>
 
         <HeadingOne>
@@ -105,7 +117,10 @@ onMounted(() => {
         </p>
       </header>
 
-      <div v-show="wavesurfer" class="mx-auto flex max-w-96 items-center gap-4">
+      <div
+        v-show="wavesurfer && $app.lesson.audioUrl"
+        class="mx-auto flex max-w-96 items-center gap-4"
+      >
         <button
           v-if="wavesurfer"
           @click="togglePlayer"
@@ -155,18 +170,26 @@ onMounted(() => {
 
         <div v-if="!capturing" class="flex flex-wrap justify-end gap-7">
           <BaseButton
-            class="grow md:grow-0"
+            v-if="!$app.lesson.audioUrl"
+            class="flex grow items-center gap-x-2 md:grow-0"
             data-testid="generate-audio-btn"
             variant="secondary"
-            @click="
-              $app.lesson.audioUrl
-                ? saveAudio(`${$app.lesson.slug}`)
-                : generateAudioLesson()
-            "
+            :disabled="isGeneratingAudio"
+            @click="generateAudioLesson"
           >
-            {{
-              $app.lesson.audioUrl ? 'Save audio' : 'Generate audio exercise'
-            }}
+            <LoadingIcon v-if="isGeneratingAudio" />
+            {{ isGeneratingAudio ? 'Generating' : 'Generate ' }}
+            audio exercise
+          </BaseButton>
+
+          <BaseButton
+            v-else
+            class="flex grow items-center gap-x-2 md:grow-0"
+            data-testid="generate-audio-btn"
+            variant="secondary"
+            @click="saveAudio(`${$app.lesson.slug}`)"
+          >
+            Save audio
           </BaseButton>
 
           <BaseButton
