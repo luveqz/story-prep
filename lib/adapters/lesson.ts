@@ -4,10 +4,8 @@ export function getAdaptedLesson(data: any) {
   let lesson
 
   try {
-    const output = data.candidates[0].output
-
     // Clean the string from LLM explanations.
-    const jsonMatch = output.match(/\{[^]*\}$/)
+    const jsonMatch = data.match(/{(?:[^{}]|{(?:[^{}]|{[^{}]*})*})*}/g)
 
     if (jsonMatch) {
       const jsonString = jsonMatch[0]

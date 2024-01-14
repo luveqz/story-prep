@@ -1,33 +1,11 @@
-export const PALM_API_BASE_URL =
-  'https://generativelanguage.googleapis.com/v1beta2/models/text-bison-001:generateText'
+/*--------------------------------------------------
+  Clarifai
+--------------------------------------------------*/
+export const CLARIFAI_API_BASE_URL = 'https://api.clarifai.com/v2/models/'
 
-export const PALM_API_SAFETY_SETTINGS = [
-  {
-    category: 'HARM_CATEGORY_DEROGATORY',
-    threshold: 'BLOCK_NONE',
-  },
-  {
-    category: 'HARM_CATEGORY_TOXICITY',
-    threshold: 'BLOCK_NONE',
-  },
-  {
-    category: 'HARM_CATEGORY_VIOLENCE',
-    threshold: 'BLOCK_NONE',
-  },
-  {
-    category: 'HARM_CATEGORY_SEXUAL',
-    threshold: 'BLOCK_NONE',
-  },
-  {
-    category: 'HARM_CATEGORY_MEDICAL',
-    threshold: 'BLOCK_NONE',
-  },
-  {
-    category: 'HARM_CATEGORY_DANGEROUS',
-    threshold: 'BLOCK_NONE',
-  },
-]
-
+/*--------------------------------------------------
+  Prompts
+--------------------------------------------------*/
 export const PROMPT_TEMPLATE = `
 INSTRUCTION:
 Take the following TEXT_INPUT and extract the vocabulary, including 4 nouns, 4 verbs, phrasal verbs, and idioms. Turn each array item into an object which has the properties "entry", "definition", and "examples", which includes an array of two short usage examples. Additionally, add a root level property "grammar" that lists the grammar topics covered in TEXT_INPUT. Return only the raw JSON object, without additional explanation text in the response. The returned object includes the root properties "nouns", "verbs", "idioms", and "grammar". Again, this is very important: except to "grammar' property, all the root properties are arrays of objects that include the "entry", "definition", and "examples" properties. 

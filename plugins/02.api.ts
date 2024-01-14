@@ -1,5 +1,4 @@
-import { PALM_API_BASE_URL } from '@/lib/constants'
-import { PALM_API_SAFETY_SETTINGS } from '@/lib/constants'
+import { getAdaptedClarifaiRequest } from '@/lib/adapters/clarifai'
 import { PROMPT_TEMPLATE } from '@/lib/constants'
 
 export default defineNuxtPlugin(() => {
@@ -8,19 +7,19 @@ export default defineNuxtPlugin(() => {
   return {
     provide: {
       api: {
-        generateLesson() {
-          return $fetch(`${PALM_API_BASE_URL}?key=${$app.apiKey}`, {
-            method: 'post',
-            body: {
-              prompt: {
-                text: PROMPT_TEMPLATE.replace(
-                  '{{ STORY }}',
-                  $app.story.content,
-                ),
-              },
-              safetySettings: PALM_API_SAFETY_SETTINGS,
-            },
+        async generateLesson() {
+          const { url, options } = getAdaptedClarifaiRequest({
+            prompt: PROMPT_TEMPLATE.replace('{{ STORY }}', $app.story.content),
+            apiKey: $app.apiKey,
           })
+
+          const response = await $fetch<any>(url, options as any)
+
+          try {
+            return response['outputs'][0]['data']['text']['raw']
+          } catch (error) {
+            console.error(error)
+          }
         },
       },
     },
