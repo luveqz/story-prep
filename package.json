@@ -6,14 +6,12 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "cy:open": "cypress open"
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@types/dom-to-image": "^2.6.4",
     "autoprefixer": "^10.4.15",
-    "cypress": "^13.2.0",
     "nuxt": "^3.7.1",
     "postcss": "^8.4.29",
     "prettier": "^3.0.3",
