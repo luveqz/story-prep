@@ -1,3 +1,4 @@
+import type { LessonEntry, Lesson } from '@/lib/schemas'
 import { LessonSchema } from '@/lib/schemas'
 
 export function getAdaptedLesson(data: any) {
@@ -24,4 +25,35 @@ export function getAdaptedLesson(data: any) {
   }
 
   return { error: 'We got an unexpected response from the LLM, please retry.' }
+}
+
+function getAdaptedScriptEntry(entry: LessonEntry) {
+  return `
+${entry.entry}: ${entry.definition} 
+
+Usage examples of "${entry.entry}":
+- ${entry.examples.map((example: string) => example).join('\n- ')}
+
+`
+}
+
+export function getAdaptedLessonScript(content: Lesson) {
+  let script = ''
+
+  if (content.nouns) {
+    script += 'Part One: Nouns...\n'
+    script += content.nouns.map((noun) => getAdaptedScriptEntry(noun))
+  }
+
+  if (content.verbs) {
+    script += 'Part Two: Verbs...\n'
+    script += content.verbs.map((noun) => getAdaptedScriptEntry(noun))
+  }
+
+  if (content.idioms) {
+    script += 'Part Three: Idioms...\n'
+    script += content.idioms.map((noun) => getAdaptedScriptEntry(noun))
+  }
+
+  return script
 }

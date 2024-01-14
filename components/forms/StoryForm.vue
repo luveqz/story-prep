@@ -5,7 +5,7 @@ import { slugify } from '@/lib/utils/string'
 const { $app, $api, $modal } = useNuxtApp()
 
 const { data, error, execute, pending, status } = await useAsyncData(
-  $api.generateLesson,
+  $api.generateTextLesson,
   { immediate: false },
 )
 const adapterError = ref('')
@@ -40,7 +40,7 @@ const apiError = computed(
 
 <template>
   <form
-    class="grow rounded-md bg-brown-700 p-8 sm:max-w-[40rem]"
+    class="grow rounded-md bg-gray p-8 sm:max-w-[40rem]"
     @submit.prevent="execute()"
   >
     <HeadingTwo>Paste your story</HeadingTwo>

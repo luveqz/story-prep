@@ -4,6 +4,30 @@ import { jsPDF } from 'jspdf'
 
 const lesson = ref<HTMLElement | undefined>()
 const capturing = ref(false)
+const { $api } = useNuxtApp()
+
+const {
+  data,
+  execute: generateAudio,
+  pending: generatingAudio,
+} = await useAsyncData($api.generateAudioLesson, { immediate: false })
+
+const generateAudioLesson = async (slug: string) => {
+  await generateAudio()
+  const audio = data.value
+
+  if (audio) {
+    const link = document.createElement('a')
+
+    const format = audio.audio_info.audio_format.toLowerCase()
+    link.href = `data:audio/${format};base64,${audio.base64}`
+    link.download = `${slug}.${format}`
+
+    document.body.appendChild(link)
+    link.click()
+    console.log(link)
+  }
+}
 
 const saveAsPdf = async (filename: string) => {
   if (lesson.value) {
@@ -38,12 +62,7 @@ const saveAsPdf = async (filename: string) => {
     data-testid="lesson-sheet"
     class="max-h-[calc(100vh_-_2rem)] max-w-[40rem] grow overflow-auto rounded-md border-r-8 border-gray bg-gray"
   >
-    <div
-      v-if="$app.lesson"
-      ref="lesson"
-      class="bg-brown-700 p-8"
-      @submit.prevent
-    >
+    <div v-if="$app.lesson" ref="lesson" class="bg-gray p-8" @submit.prevent>
       <header class="mb-10 text-center">
         <p class="font-londrina text-xl sm:text-2xl">English Lesson: </p>
 
@@ -92,13 +111,24 @@ const saveAsPdf = async (filename: string) => {
           </ul>
         </section>
 
-        <BaseButton
-          data-testid="save-btn"
-          v-if="!capturing"
-          @click="saveAsPdf(`${$app.lesson.slug}.pdf`)"
-        >
-          Save as PDF
-        </BaseButton>
+        <div v-if="!capturing" class="flex flex-wrap justify-end gap-7">
+          <BaseButton
+            class="grow md:grow-0"
+            data-testid="generate-audio-btn"
+            variant="secondary"
+            @click="generateAudioLesson(`${$app.lesson.slug}`)"
+          >
+            Generate audio exercise
+          </BaseButton>
+
+          <BaseButton
+            class="grow md:grow-0"
+            data-testid="save-btn"
+            @click="saveAsPdf(`${$app.lesson.slug}.pdf`)"
+          >
+            Save as PDF
+          </BaseButton>
+        </div>
       </div>
     </div>
   </div>
