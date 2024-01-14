@@ -14,13 +14,6 @@ const openLesson = (lesson: typeof $app.lesson) => {
   <div
     class="absolute left-0 top-0 flex min-h-full w-full flex-col items-center"
   >
-    <!-- Background Blob -->
-    <div
-      class="absolute left-0 top-0 flex h-[18rem] w-full justify-center overflow-x-hidden sm:h-[24.6rem]"
-    >
-      <TheBlob class="absolute bottom-0 h-full min-w-full" />
-    </div>
-
     <!-- Page Content -->
     <main
       class="mt-4 flex min-h-full max-w-[34rem] grow flex-col items-center px-4 sm:mt-8 sm:px-0"

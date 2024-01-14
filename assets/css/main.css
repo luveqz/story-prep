@@ -43,7 +43,7 @@
 -------------------------------------*/
 body {
   font-family: 'Quicksand', sans-serif;
-  @apply bg-brown-700 text-white;
+  @apply bg-brown-600 text-white;
 }
 
 /*-------------------------------------
@@ -77,7 +77,7 @@ body::-webkit-scrollbar-track {
 }
 
 .disabled-btn {
-  @apply shadow-brown-300 bg-brown-200;
+  @apply bg-brown-200 shadow-brown-300;
 }
 
 .big-btn {
