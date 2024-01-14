@@ -1,203 +1,287 @@
 [
   {
     "id": 1,
-    "title": "A Perfect Day for Bananafish",
-    "slug": "a-perfect-day-for-bananafish",
-    "author": "J. D. Salinger",
-    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fsalinger.png?alt=media",
+    "title": "Irman",
+    "slug": "irman",
+    "author": "Samantha Schweblin",
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fschweblin.webp?alt=media",
+    "audioUrl": "https://res.cloudinary.com/dqsh2vhxj/video/upload/v1705267402/story-prep/irman_vdedcd.wav",
     "lesson": {
       "nouns": [
         {
-          "entry": "New York",
-          "definition": "a city in the northeastern United States.",
-          "example": [
-            "I'm going to New York for vacation.",
-            "She's from New York."
+          "entry": "truck stop",
+          "definition": "a roadside service area with facilities for refueling and resting, often with a restaurant or café for truckers and other motorists.",
+          "examples": [
+            "We pulled over at the next truck stop to refuel and grab a bite to eat.",
+            "The truck stop was crowded with big rigs and travelers stopping for a rest."
           ]
         },
         {
-          "entry": "hotel",
-          "definition": "a building that provides lodging and meals for travelers.",
-          "example": [
-            "I stayed at a hotel when I was in Miami.",
-            "The hotel had a pool and a restaurant."
+          "entry": "menu",
+          "definition": "a list of dishes available in a restaurant.",
+          "examples": [
+            "Oliver grabbed a menu from another table to check the beverages.",
+            "The restaurant had a varied menu, offering both local and international cuisine."
           ]
         },
         {
-          "entry": "magazine",
-          "definition": "a publication containing articles, stories, pictures, etc., usually issued regularly.",
-          "example": [
-            "I read an article in a magazine about the history of the city.",
-            "I bought a magazine to read on the plane."
+          "entry": "curtain",
+          "definition": "a piece of material suspended at the top to form a screen, typically movable sideways along a rail and found as one of a pair at a window.",
+          "examples": [
+            "He appeared from behind the plastic curtain with a look of confusion.",
+            "She drew the curtains together as the sun began to set."
           ]
         },
         {
-          "entry": "nail",
-          "definition": "the hard part at the end of a finger or toe.",
-          "example": [
-            "I broke my nail when I hit it with a hammer.",
-            "She painted her nails red."
-          ]
-        },
-        {
-          "entry": "moon",
-          "definition": "the natural satellite of the Earth.",
-          "example": [
-            "The moon is the only natural satellite of the Earth.",
-            "I saw the moon last night."
+          "entry": "special",
+          "definition": "a dish not on the regular menu but offered on a particular day.",
+          "examples": [
+            "We decided to try the daily special, hoping it would be something fresh.",
+            "The restaurant's special was always a surprise, featuring seasonal ingredients."
           ]
         }
       ],
       "verbs": [
         {
-          "entry": "ring",
-          "definition": "to make a bell-like sound.",
-          "example": ["The phone rang.", "The doorbell rang."]
+          "entry": "driving",
+          "definition": "operating and controlling the direction and speed of a motor vehicle.",
+          "examples": [
+            "Oliver was driving while I was trying to find a place to stop and drink.",
+            "She was driving through the countryside, enjoying the scenic views."
+          ]
         },
         {
-          "entry": "dry",
-          "definition": "to remove all moisture from something.",
-          "example": ["I dried the dishes.", "I dried my hair."]
+          "entry": "littered",
+          "definition": "scattered about in an untidy manner; covered with or as if with scattered pieces of trash or litter.",
+          "examples": [
+            "The tables were littered with crumbs and bottles after the lunch rush.",
+            "The park was littered with wrappers and cans after the concert."
+          ]
         },
         {
-          "entry": "wait",
-          "definition": "to remain in a place in order to receive something or for something to happen.",
-          "example": [
-            "I waited for the bus.",
-            "I waited for the movie to start."
+          "entry": "needed",
+          "definition": "require (something) because it is essential or very important rather than just desirable.",
+          "examples": [
+            "I desperately needed to drink something to quench my thirst.",
+            "He needed to finish the report by the end of the day."
+          ]
+        },
+        {
+          "entry": "ordered",
+          "definition": "requested some product or service to be made, supplied, or served.",
+          "examples": [
+            "Oliver ordered the drinks despite the waiter's silence.",
+            "She ordered a new book online and awaited its delivery."
+          ]
+        }
+      ],
+      "phrasal_verbs": [
+        {
+          "entry": "walked over",
+          "definition": "to go on foot to a nearby location.",
+          "examples": [
+            "He walked over to us with a confused expression.",
+            "After spotting her friend, she walked over to say hello."
+          ]
+        },
+        {
+          "entry": "said hello",
+          "definition": "to greet someone with the word 'hello'.",
+          "examples": [
+            "We said hello to the waiter but received no reply.",
+            "I saw my neighbor on the street and said hello."
+          ]
+        },
+        {
+          "entry": "made a joke",
+          "definition": "to tell a funny story or create a humorous situation.",
+          "examples": [
+            "Oliver made a joke about the heat, trying to lighten the mood.",
+            "During the meeting, she made a joke that broke the ice with the new team members."
+          ]
+        },
+        {
+          "entry": "walked away",
+          "definition": "to leave or depart from a place by walking.",
+          "examples": [
+            "After taking our order, the waiter walked away without another word.",
+            "She walked away from the conversation feeling frustrated."
           ]
         }
       ],
       "idioms": [
         {
-          "entry": "hottest day in history",
-          "definition": "the day with the highest temperature on record.",
-          "example": [
-            "It was the hottest day in history.",
-            "The hottest day of the year."
+          "entry": "not move a hair",
+          "definition": "to not change or affect something at all.",
+          "examples": [
+            "The whirring fan didn't move a hair on our heads, it was so weak.",
+            "His impassioned speech did not move a hair on the board members' convictions."
+          ]
+        },
+        {
+          "entry": "do someone a favor",
+          "definition": "to do something to help someone.",
+          "examples": [
+            "I asked for the daily special to do the waiter a favor by keeping the order simple.",
+            "Could you do me a favor and pass the salt?"
+          ]
+        },
+        {
+          "entry": "plopped down",
+          "definition": "to sit down or place oneself or something down heavily and carelessly.",
+          "examples": [
+            "He looked as if someone had just plopped him down in the middle of the restaurant.",
+            "She plopped down on the couch after a long day at work."
+          ]
+        },
+        {
+          "entry": "nothing more to say",
+          "definition": "a phrase indicating that there is no further information to add or no need for further discussion.",
+          "examples": [
+            "He walked away as though there was nothing more to say about the menu options.",
+            "After the argument, they parted ways with nothing more to say to each other."
           ]
         }
       ],
       "grammar": [
         "nouns",
-        "countable nouns",
-        "proper nouns",
+        "verbs",
+        "phrasal verbs",
+        "idioms",
         "present continuous",
-        "past simple",
-        "first person"
+        "past participle",
+        "modal verbs",
+        "definite and indefinite articles",
+        "prepositions",
+        "conjunctions",
+        "adjectives",
+        "imperative mood"
       ]
     }
   },
   {
     "id": 2,
-    "title": "Marie’s Proof of Love",
-    "slug": "marie-s-proof-of-love",
-    "author": "Mieko Kawakami",
-    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fkawakami.png?alt=media",
+    "title": "Things We Lost in the Fire",
+    "slug": "things-we-lost-in-the-fire",
+    "author": "Mariana Enríquez",
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fenriquez.webp?alt=media",
+    "audioUrl": "https://res.cloudinary.com/dqsh2vhxj/video/upload/v1705273094/story-prep/things-we-lost-in-the-fire_p1umpq.wav",
     "lesson": {
       "nouns": [
         {
-          "entry": "cake",
-          "definition": "a sweet baked dish made from flour, sugar, eggs, and other ingredients, usually in a round or square shape",
-          "example": [
-            "I love to bake cakes.",
-            "I'll bring the cake to the party."
+          "entry": "princess",
+          "definition": "a female member of a royal family other than a queen, especially a daughter or granddaughter of a king or queen.",
+          "examples": [
+            "She was treated like a suburban princess with the best toys and parties.",
+            "In fairy tales, a princess often needs to be rescued by a brave knight."
           ]
         },
         {
-          "entry": "lake",
-          "definition": "a large body of water surrounded by land",
-          "example": [
-            "I went swimming in the lake.",
-            "The lake is frozen over this time of year."
+          "entry": "chalet",
+          "definition": "a type of building or house, typically found in mountain regions, with overhanging eaves.",
+          "examples": [
+            "Her enormous English chalet stood out in our gray neighborhood.",
+            "They rented a chalet for their ski holiday in the Alps."
           ]
         },
         {
-          "entry": "shadow",
-          "definition": "a dark area on a surface caused by an object blocking light",
-          "example": [
-            "The shadow of the tree fell across the lawn.",
-            "The shadow of the building was cast on the ground."
+          "entry": "prosthetic",
+          "definition": "an artificial device that replaces a missing body part, which may be lost through trauma, disease, or a condition present at birth.",
+          "examples": [
+            "She didn’t even want to use a prosthetic arm.",
+            "He learned to walk again with the help of a prosthetic leg."
           ]
         },
         {
-          "entry": "forest",
-          "definition": "a large area of land covered in trees",
-          "example": [
-            "The forest is home to many different animals.",
-            "The forest was destroyed by a forest fire."
+          "entry": "scar",
+          "definition": "a mark left on the skin or within body tissue where a wound, burn, or sore has not healed completely and fibrous connective tissue has developed.",
+          "examples": [
+            "She claimed the scar from the dog attack healed really well.",
+            "His scar from the appendectomy was still visible near his groin."
           ]
         }
       ],
       "verbs": [
         {
-          "entry": "imagined",
-          "definition": "to form a mental picture of something that is not present",
-          "example": [
-            "I imagined what it would be like to live in a castle.",
-            "She imagined herself winning the lottery."
+          "entry": "visit",
+          "definition": "to go to see and spend time with someone socially.",
+          "examples": [
+            "Her memory doesn’t visit me during the day.",
+            "He plans to visit his grandmother this weekend."
           ]
         },
         {
-          "entry": "perused",
-          "definition": "to read something carefully and attentively",
-          "example": [
-            "I perused the book before I bought it.",
-            "She perused the internet for information about the latest news."
+          "entry": "vary",
+          "definition": "to differ in size, degree, or nature from something else of the same general class.",
+          "examples": [
+            "My dreams of Adela vary, but there is always the rain.",
+            "The tasks vary each day in complexity."
           ]
         },
         {
-          "entry": "joked",
-          "definition": "to say something funny",
-          "example": [
-            "I joked about the situation to lighten the mood.",
-            "The comedian joked about his own weight."
+          "entry": "watch",
+          "definition": "to look at or observe attentively over a period of time.",
+          "examples": [
+            "We stood in front of the empty house and watched the police in the yard.",
+            "She likes to watch movies on the big screen."
           ]
         },
         {
-          "entry": "exist",
-          "definition": "to be or have being",
-          "example": ["The universe exists.", "God exists, or so they say."]
+          "entry": "rub",
+          "definition": "to move one's hand or a cloth repeatedly back and forth over the surface of something with firm pressure.",
+          "examples": [
+            "If she saw repulsion, she was capable of rubbing her stump in their face.",
+            "He rubbed his hands together to generate warmth."
+          ]
         }
       ],
       "idioms": [
         {
-          "entry": "far, far away",
-          "definition": "very distant",
-          "example": [
-            "I moved far, far away from my hometown.",
-            "I want to go to a place far, far away."
+          "entry": "spoiled rotten",
+          "definition": "to be treated with excessive indulgence and to behave poorly as a result.",
+          "examples": [
+            "She was a suburban princess, spoiled rotten in that enormous English chalet.",
+            "The only child was spoiled rotten by his doting parents."
           ]
         },
         {
-          "entry": "take a deep breath",
-          "definition": "to breathe in deeply",
-          "example": [
-            "I took a deep breath and jumped into the water.",
-            "She took a deep breath before giving her speech."
+          "entry": "silvered",
+          "definition": "having a shiny, grayish coating resembling silver.",
+          "examples": [
+            "The water under the siesta sun looked silvered.",
+            "His hair was silvered with age."
           ]
         },
         {
-          "entry": "make a mistake",
-          "definition": "to do something incorrectly",
-          "example": [
-            "I made a mistake on my math test.",
-            "She made a mistake by trusting him."
+          "entry": "grossed out",
+          "definition": "to feel disgust or strong aversion.",
+          "examples": [
+            "A lot of the other kids were grossed out by her.",
+            "He was grossed out by the sight of raw meat."
+          ]
+        },
+        {
+          "entry": "luckily",
+          "definition": "by good fortune; fortunately.",
+          "examples": [
+            "Luckily she wasn’t left-handed.",
+            "Luckily, they arrived at the station just in time to catch the train."
           ]
         }
       ],
       "grammar": [
         "nouns",
+        "verbs",
+        "phrasal verbs",
+        "idioms",
         "adjectives",
-        "past tense",
-        "conditional",
-        "past perfect",
-        "present progressive",
         "present simple",
-        "future tense",
-        "past continuous",
-        "first person",
-        "second person"
+        "past simple",
+        "conjunctions",
+        "adverbs of frequency",
+        "superlatives",
+        "comparatives",
+        "conditional sentences"
       ]
     }
   },
@@ -207,77 +291,113 @@
     "slug": "why-aren-t-you-laughing",
     "author": "David Sedaris",
     "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fsedaris.png?alt=media",
+    "audioUrl": "https://res.cloudinary.com/dqsh2vhxj/video/upload/v1705275280/story-prep/why-aren-t-you-laughing_zjv4dr.wav",
     "lesson": {
       "nouns": [
         {
-          "entry": "house",
-          "definition": "a building for human habitation, typically with a roof and walls",
-          "example": ["The house is on fire.", "We went to the house."]
-        },
-        {
-          "entry": "family",
-          "definition": "a group of people who are related to each other by blood, marriage, or adoption",
-          "example": [
-            "My family is very large.",
-            "We had dinner with my family."
+          "entry": "architect",
+          "definition": "a person who designs buildings and in many cases also supervises their construction.",
+          "examples": [
+            "The architect drew plans for a modern house.",
+            "They hired an architect to renovate their home."
           ]
         },
         {
-          "entry": "alcohol",
-          "definition": "an intoxicating drink",
-          "example": ["I like to drink alcohol.", "The alcohol made me drunk."]
+          "entry": "pane",
+          "definition": "a single sheet of glass in a window or door.",
+          "examples": [
+            "The baseball smashed through the window pane.",
+            "She cleaned the panes of the greenhouse."
+          ]
+        },
+        {
+          "entry": "down",
+          "definition": "a hill or stretch of rolling grassland, especially in the British Isles.",
+          "examples": [
+            "They picnicked on the down overlooking the village.",
+            "Sheep were grazing on the green downs."
+          ]
+        },
+        {
+          "entry": "box-office",
+          "definition": "a place where tickets are sold for an event, or the financial success of a film or show.",
+          "examples": [
+            "The movie was a hit at the box-office.",
+            "We need to collect our tickets at the box-office before the show starts."
+          ]
         }
       ],
       "verbs": [
         {
-          "entry": "sign",
-          "definition": "make a mark on a surface to indicate approval, agreement, or ownership",
-          "example": ["I signed the contract.", "She signed her name."]
-        },
-        {
-          "entry": "remember",
-          "definition": "recall knowledge of or have in mind something previously perceived, experienced, or learned",
-          "example": [
-            "I remember what you said.",
-            "She remembered her childhood."
+          "entry": "denigrate",
+          "definition": "to criticize unfairly; to disparage.",
+          "examples": [
+            "Whenever I denigrate the place, Hugh reminds me of the view.",
+            "He shouldn't denigrate his opponent's achievements."
           ]
         },
         {
-          "entry": "sober",
-          "definition": "not drunk",
-          "example": [
-            "I was sober when I drove home.",
-            "He was sober enough to drive."
+          "entry": "remind",
+          "definition": "to cause someone to remember someone or something.",
+          "examples": [
+            "Hugh reminds me that it’s the view that counts.",
+            "She reminded him to take his medication."
+          ]
+        },
+        {
+          "entry": "graze",
+          "definition": "to feed on growing grass; to touch lightly in passing.",
+          "examples": [
+            "The cows graze in the fields from dawn till dusk.",
+            "His hand grazed her shoulder as he walked by."
+          ]
+        },
+        {
+          "entry": "perform",
+          "definition": "to carry out an action or pattern of behavior; to entertain an audience by playing a role.",
+          "examples": [
+            "I performed at the theatre last night.",
+            "The musician performed her new song live."
           ]
         }
       ],
       "idioms": [
         {
-          "entry": "chip in",
-          "definition": "contribute money or other resources to a common fund or cause",
-          "example": [
-            "We all chipped in to buy a new couch.",
-            "She chipped in some money for the pizza."
+          "entry": "nothing much to look at",
+          "definition": "not very attractive or impressive to view.",
+          "examples": [
+            "The old car runs well, but it's nothing much to look at.",
+            "Their office building is nothing much to look at, but it's functional."
           ]
         },
         {
-          "entry": "a dead tooth",
-          "definition": "something that is useless or no longer effective",
-          "example": [
-            "The old car is a dead tooth.",
-            "The old computer is a dead tooth."
+          "entry": "the view that counts",
+          "definition": "the perspective or outlook that is considered important or valuable.",
+          "examples": [
+            "When choosing a hotel room, it's the view that counts.",
+            "He may not be the most charismatic speaker, but it's his message that's the view that counts."
           ]
         },
         {
-          "entry": "a living ghost",
-          "definition": "a person who no longer feels alive or who has lost all joy in life",
-          "example": [
-            "He's like a living ghost since his wife died.",
-            "She's a living ghost since she lost her job."
+          "entry": "spread out",
+          "definition": "to extend over a large area; to distribute or be distributed over a wide space.",
+          "examples": [
+            "The beach towels were spread out on the sand.",
+            "The city is spread out across the valley."
           ]
         }
       ],
-      "grammar": ["nouns", "adjectives", "verbs", "phrasal verbs", "idioms"]
+      "grammar": [
+        "nouns",
+        "verbs",
+        "phrasal verbs",
+        "idioms",
+        "adjectives",
+        "prepositions",
+        "present simple tense",
+        "past simple tense",
+        "imperative sentences"
+      ]
     }
   },
   {
@@ -286,188 +406,105 @@
     "slug": "boxes",
     "author": "Raymond Carver",
     "imageUrl": "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Fcarver.png?alt=media",
+    "audioUrl": "https://res.cloudinary.com/dqsh2vhxj/video/upload/v1705274256/story-prep/boxes_elscdn.wav",
     "lesson": {
       "nouns": [
         {
-          "entry": "mother",
-          "definition": "a female parent",
-          "example": [
-            "I love my mother very much",
-            "My mother is a good person."
-          ]
-        },
-        {
           "entry": "icebox",
-          "definition": "a refrigerator",
-          "example": [
-            "My mother put the chicken in the icebox.",
-            "The icebox was empty."
-          ]
-        },
-        {
-          "entry": "chicken",
-          "definition": "a domesticated fowl, Gallus gallus domesticus, that is raised for its meat and eggs.",
-          "example": [
-            "We ate fried chicken for dinner.",
-            "The chicken laid an egg."
-          ]
-        },
-        {
-          "entry": "plate",
-          "definition": "a flat, usually round, dish used for serving or eating food",
-          "example": [
-            "We used plates for dinner.",
-            "The plate was made of glass."
-          ]
-        },
-        {
-          "entry": "knife",
-          "definition": "a bladed implement used for cutting",
-          "example": ["I cut the chicken with a knife.", "The knife was sharp."]
-        },
-        {
-          "entry": "fork",
-          "definition": "a handheld implement with two or more prongs, used for eating",
-          "example": [
-            "We used forks to eat the chicken.",
-            "The fork was metal."
-          ]
-        },
-        {
-          "entry": "last minute",
-          "definition": "at the end of the available time",
-          "example": [
-            "We decided to go to the movies at the last minute.",
-            "The plane left at the last minute."
-          ]
-        },
-        {
-          "entry": "meal",
-          "definition": "the food eaten at one time",
-          "example": [
-            "We had a delicious meal at the restaurant.",
-            "The meal was healthy."
-          ]
-        },
-        {
-          "entry": "figure something out",
-          "definition": "to understand something or find a solution to a problem",
-          "example": [
-            "I can't figure out how to fix this computer.",
-            "I finally figured out how to solve the puzzle."
-          ]
-        },
-        {
-          "entry": "go to eat",
-          "definition": "to visit a restaurant or other place to eat",
-          "example": [
-            "We went to eat at the new Italian restaurant.",
-            "The restaurant was crowded."
+          "definition": "an insulated cabinet or chest with a partition for ice, used for preserving or cooling food and drinks; an old-fashioned term for a refrigerator.",
+          "examples": [
+            "She went to the icebox to get some fresh fruit.",
+            "My grandmother still refers to her refrigerator as the icebox."
           ]
         },
         {
           "entry": "curtains",
-          "definition": "a piece of cloth hung over a window to keep out the light or provide privacy",
-          "example": [
-            "We bought some new curtains for the living room.",
-            "The curtains were blue."
+          "definition": "pieces of fabric or other material intended to block or obscure light, or to provide privacy by covering a window or other opening.",
+          "examples": [
+            "Jill was browsing through a catalogue in search of new curtains.",
+            "They drew the curtains as the sun began to set."
+          ]
+        },
+        {
+          "entry": "groomer",
+          "definition": "a person who cleans and trims the fur of dogs and other animals as an occupation.",
+          "examples": [
+            "Jill is a professional groomer who takes pride in her work.",
+            "The groomer at the pet salon gave the poodle a stylish haircut."
+          ]
+        },
+        {
+          "entry": "eardrum",
+          "definition": "a thin membrane that separates the outer ear from the middle ear and vibrates in response to sound waves; the tympanic membrane.",
+          "examples": [
+            "Jill's second husband left her with a broken eardrum.",
+            "The loud explosion at the concert caused damage to his eardrum."
           ]
         }
       ],
       "verbs": [
         {
-          "entry": "pack",
-          "definition": "to put things together in a container",
-          "example": [
-            "I packed my suitcase for the trip.",
-            "The movers packed up all the furniture."
+          "entry": "packed",
+          "definition": "to fill (a suitcase or bag), especially with clothes and other items needed for travel.",
+          "examples": [
+            "My mother had already packed most of her dishes and kitchen things.",
+            "He packed his bag quickly, eager to begin his journey."
           ]
         },
         {
-          "entry": "call",
-          "definition": "to make a phone call to someone",
-          "example": [
-            "I called my mother to wish her a happy birthday.",
-            "The phone rang and I answered it."
+          "entry": "defrosting",
+          "definition": "to remove frost or ice from (a refrigerator or freezer); to thaw out (food or other items).",
+          "examples": [
+            "She's waiting for the chicken to finish defrosting before she can cook it.",
+            "I need to defrost the freezer; it's completely iced over."
           ]
         },
         {
-          "entry": "hang up",
-          "definition": "to stop talking on the phone",
-          "example": [
-            "I hung up the phone and went to bed.",
-            "The phone rang and I hung up."
+          "entry": "fry up",
+          "definition": "to cook food in hot oil or fat.",
+          "examples": [
+            "She needs to fry up the chicken before it spoils.",
+            "On weekends, we often fry up some bacon and eggs for breakfast."
           ]
         },
         {
-          "entry": "wish",
-          "definition": "to hope for something",
-          "example": [
-            "I wish I had more money.",
-            "I wish I could go on vacation."
+          "entry": "bounced back",
+          "definition": "to recover from a setback or hardship.",
+          "examples": [
+            "Despite the challenges, Jill has bounced back and found a job she enjoys.",
+            "The team bounced back from their defeat with a strong performance in their next game."
           ]
-        },
-        {
-          "entry": "say",
-          "definition": "to express something in words",
-          "example": [
-            "I said hello to my mother.",
-            "The teacher said the answer was 42."
-          ]
-        },
-        {
-          "entry": "bend",
-          "definition": "to make something or oneself curve",
-          "example": [
-            "I bent the paper into a square.",
-            "The tree bent in the wind."
-          ]
-        },
-        {
-          "entry": "listen",
-          "definition": "to pay attention to sounds",
-          "example": [
-            "I listened to the birds singing.",
-            "The teacher listened to the students answer."
-          ]
-        },
-        {
-          "entry": "close",
-          "definition": "to make something unable to be opened",
-          "example": [
-            "I closed the door behind me.",
-            "The door closed automatically."
-          ]
-        },
-        {
-          "entry": "borrow",
-          "definition": "to take something from someone with the intention of returning it",
-          "example": [
-            "I borrowed my friend's car.",
-            "The library borrows books from other libraries."
-          ]
-        },
-        {
-          "entry": "run",
-          "definition": "to move quickly by taking steps",
-          "example": [
-            "I ran to the store to buy some milk.",
-            "The dog ran after the ball."
-          ]
-        },
-        {
-          "entry": "sit",
-          "definition": "to rest with one's weight on one's buttocks",
-          "example": [
-            "I sat down on the couch.",
-            "The cat sat on the windowsill."
-          ]
-        },
-        {
-          "entry": "drive",
-          "definition": "to operate a vehicle",
-          "example": ["I drove my car to work.", "The bus driver drove"]
         }
+      ],
+      "idioms": [
+        {
+          "entry": "all hell broke loose",
+          "definition": "a situation suddenly becomes noisy and violent, usually with a lot of people arguing or fighting.",
+          "examples": [
+            "When Jill's children were kidnapped, all hell broke loose.",
+            "All hell broke loose in the courtroom after the verdict was announced."
+          ]
+        },
+        {
+          "entry": "can you beat it?",
+          "definition": "an expression of disbelief or amazement, often rhetorical, questioning whether something that has happened can be topped or believed.",
+          "examples": [
+            "She was presented with a bill for the bridge repair, can you beat it?",
+            "He won the lottery twice in one year, can you beat it?"
+          ]
+        }
+      ],
+      "grammar": [
+        "nouns",
+        "verbs",
+        "phrasal verbs",
+        "idioms",
+        "imperatives",
+        "present perfect",
+        "present simple",
+        "past simple",
+        "modal verbs",
+        "possessive pronouns"
       ]
     }
   }
