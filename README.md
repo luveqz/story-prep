@@ -1,12 +1,23 @@
 [![License: MIT](docs/img/license-badge.svg)](LICENSE)
+[![openai-tts-1](https://clarifai.com/api/openai/tts/models/openai-tts-1/badge)](https://clarifai.com/openai/tts/models/openai-tts-1)
+[![openai-gpt-4-turbo](https://clarifai.com/api/openai/tts/models/openai-gpt-4-turbo/badge)](https://clarifai.com/openai/tts/models/openai-gpt-4-turbo)
 
-<p align="center">
-  <img alt="Story Prep Logo" src="https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/story-prep%2Flogo.webp?alt=media">
-</p>
+[![Story prep: Generate short ad-hoc English lessons for your next read](docs/img/cover.svg)](LICENSE)
 
-<p align="center" style="max-width: 380px; margin: auto">
-    Generate short ad-hoc English lessons for your next read.
-</p>
+## Intro
+
+What if you could learn another language by reading your favorite authors? And I don't talk about just reading them with a dictionary at hand. I mean lessons that teach just the necessary for you to enjoy that particular story 🗝🚪.
+
+Just go to [storyprep.vercel.app](https://storyprep.vercel.app)
+
+Or install the Clarifai module marketplace (Just make sure you set the `CLARIFAI_PAT` env var).
+
+## Features
+
+- Generate custom vocabulary sheet based on any story you provide.
+- Generate a companion audio lesson.
+- Download lesson as PDF.
+- Download lesson as audio.
 
 ## Setup
 
