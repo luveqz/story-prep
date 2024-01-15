@@ -20,10 +20,10 @@ const openLesson = (lesson: typeof $app.lesson) => {
     >
       <TheHeader />
 
-      <aside class="relative mt-14 w-full sm:mt-24">
+      <aside class="relative mt-14 w-full sm:mt-[4.5rem]">
         <HeadingTwo class="text-center"> Examples </HeadingTwo>
 
-        <section class="mt-6 grid gap-4 sm:mt-9 sm:grid-cols-2 sm:gap-10">
+        <section class="mt-6 grid gap-4 sm:mt-9 sm:grid-cols-2 sm:gap-7">
           <StoryCard
             data-testid="story-card"
             v-for="story in stories"
