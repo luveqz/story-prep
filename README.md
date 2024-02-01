@@ -10,7 +10,7 @@ What if you could learn another language by reading your favorite authors? And I
 
 Just go to [storyprep.vercel.app](https://storyprep.vercel.app)
 
-Or install the Clarifai module marketplace (Just make sure you set the `CLARIFAI_PAT` env var).
+Or install the Clarifai [module](https://clarifai.com/luvejo/english-lesson-generator/modules/story_prep) (just make sure you [set](https://docs.clarifai.com/portal-guide/modules/secrets-management/) the `CLARIFAI_PAT` env var).
 
 ## Features
 
